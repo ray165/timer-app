@@ -8,7 +8,7 @@ function App() {
   const [runningTotal, setRunningTotal] = useState(0);
   const [timer, setTimer] = useState(0);
 
-  const intervalRef = useRef(null);
+  const intervalRef = useRef(0);
 
   const calculateDecisecondWage = () => {
     if (!dollarAmount) return 0;
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App" style={{ textAlign: 'center', padding: '20px' }}>
-      <h1>Wage Timer</h1>
+      <h1>&#128169;Timer</h1>
       <div style={{ marginBottom: '20px' }}>
         <label htmlFor="inputType">Select Type:</label>
         <select
